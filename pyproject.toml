@@ -23,3 +23,6 @@ dependencies = [
 name = "pypi"
 url = "https://pypi.org/simple"
 default = true
+
+[tool.poetry]
+package-mode = false
