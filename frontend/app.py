@@ -198,7 +198,7 @@ div[data-testid="stMetricValue"] {{
 # ==========================================
 API_URL = st.sidebar.text_input(
     "Backend URL",
-    value="http://localhost:8000"
+    value="https://digit-linearflare.onrender.com"
 )
 
 with st.sidebar:
