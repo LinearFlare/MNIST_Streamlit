@@ -1,14 +1,30 @@
-# 基础 Web 框架
-fastapi>=0.100.0
-uvicorn>=0.22.0
-python-multipart>=0.0.10
+--extra-index-url https://download.pytorch.org/whl/cpu
 
-# 纯 CPU 深度学习推理核心（已移除所有 +cu 后缀）
-torch>=2.0.0 --index-url https://download.pytorch.org/whl/cpu
-torchvision>=0.15.0 --index-url https://download.pytorch.org/whl/cpu
+# 核心 Web API 依赖
+fastapi==0.136.3
+uvicorn==0.48.0
+python-multipart==0.0.30
+anyio==4.13.0
+starlette==1.2.1
+pydantic==2.13.4
+pydantic-core==2.46.4
+annotated-types==0.7.0
+idna==3.18
+h11==0.16.0
+click==8.4.1
 
-# 图像与数据处理
-numpy>=1.24.0
-pillow>=9.5.0
-pydantic>=2.0.0
-requests>=2.31.0
+# 纯 CPU 机器学习核心 (自动匹配最适合云端环境的纯 CPU 稳定版)
+torch
+torchvision
+
+# 数据与图像辅助库
+numpy==1.26.4
+pillow==10.3.0
+typing-extensions==4.15.0
+fsspec==2026.4.0
+networkx==3.6.1
+filelock==3.29.0
+jinja2==3.1.6
+markupsafe==3.0.3
+mpmath==1.3.0
+sympy==1.14.0
