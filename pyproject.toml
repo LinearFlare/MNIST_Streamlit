@@ -4,6 +4,7 @@ version = "0.1.0"
 description = "MNIST Digit Recognizer with separate Frontend and Backend"
 readme = "README.md"
 requires-python = ">=3.10"
+package-mode = false
 dependencies = [
     "torch>=2.2.0",
     "torchvision>=0.17.0",
